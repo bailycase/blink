@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B545917429BACCA70060CD48 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545917329BACCA70060CD48 /* Login.swift */; };
+		B545917729BAD11E0060CD48 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = B545917629BAD11E0060CD48 /* Supabase */; };
+		B545917A29BAD1AA0060CD48 /* SupabaseClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545917929BAD1AA0060CD48 /* SupabaseClientManager.swift */; };
+		B545917D29BAD8620060CD48 /* MainNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545917C29BAD8620060CD48 /* MainNavigation.swift */; };
+		B545917F29BADAD90060CD48 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545917E29BADAD90060CD48 /* Main.swift */; };
+		B545918129BADC9A0060CD48 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545918029BADC9A0060CD48 /* Profile.swift */; };
+		B545918329BADCA10060CD48 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545918229BADCA10060CD48 /* Messages.swift */; };
+		B545918629BAE0170060CD48 /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545918529BAE0170060CD48 /* CameraModel.swift */; };
+		B545918A29BAE1070060CD48 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545918929BAE1070060CD48 /* CameraViewModel.swift */; };
+		B545918C29BAE14F0060CD48 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545918B29BAE14F0060CD48 /* CameraView.swift */; };
+		B545918E29BC12450060CD48 /* CameraControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545918D29BC12450060CD48 /* CameraControlsView.swift */; };
+		B584FB7429BC7FE700598849 /* CapturedPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584FB7329BC7FE700598849 /* CapturedPhotoView.swift */; };
+		B584FB7829BD017400598849 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584FB7729BD017400598849 /* CameraPreview.swift */; };
 		B5975D9E29BAACED00716C1F /* blinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5975D9D29BAACED00716C1F /* blinkApp.swift */; };
 		B5975DA029BAACED00716C1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5975D9F29BAACED00716C1F /* ContentView.swift */; };
 		B5975DA229BAACEE00716C1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5975DA129BAACEE00716C1F /* Assets.xcassets */; };
@@ -14,6 +27,18 @@
 		B5975DAF29BAACEE00716C1F /* blinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5975DAE29BAACEE00716C1F /* blinkTests.swift */; };
 		B5975DB929BAACEE00716C1F /* blinkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5975DB829BAACEE00716C1F /* blinkUITests.swift */; };
 		B5975DBB29BAACEE00716C1F /* blinkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5975DBA29BAACEE00716C1F /* blinkUITestsLaunchTests.swift */; };
+		B5975DCE29BAAD0500716C1F /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5975DCD29BAAD0500716C1F /* WidgetKit.framework */; };
+		B5975DD029BAAD0500716C1F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5975DCF29BAAD0500716C1F /* SwiftUI.framework */; };
+		B5975DD329BAAD0500716C1F /* blinksBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5975DD229BAAD0500716C1F /* blinksBundle.swift */; };
+		B5975DD529BAAD0500716C1F /* blinksLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5975DD429BAAD0500716C1F /* blinksLiveActivity.swift */; };
+		B5975DD729BAAD0500716C1F /* blinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5975DD629BAAD0500716C1F /* blinks.swift */; };
+		B5975DDA29BAAD0600716C1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5975DD929BAAD0600716C1F /* Assets.xcassets */; };
+		B5975DDC29BAAD0600716C1F /* blinks.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B5975DD829BAAD0500716C1F /* blinks.intentdefinition */; };
+		B5975DDD29BAAD0600716C1F /* blinks.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B5975DD829BAAD0500716C1F /* blinks.intentdefinition */; };
+		B5975DE029BAAD0600716C1F /* blinksExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B5975DCB29BAAD0500716C1F /* blinksExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B5E0A7C729BD167500136773 /* CapturedPhotoControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0A7C629BD167500136773 /* CapturedPhotoControls.swift */; };
+		B5E34D3429BEA790009B872C /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E34D3329BEA790009B872C /* PhotoService.swift */; };
+		B5E3D4C829BFE31B007EFD8D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D4C729BFE31B007EFD8D /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +56,42 @@
 			remoteGlobalIDString = B5975D9929BAACED00716C1F;
 			remoteInfo = blink;
 		};
+		B5975DDE29BAAD0600716C1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5975D9229BAACED00716C1F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5975DCA29BAAD0500716C1F;
+			remoteInfo = blinksExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B5975DE429BAAD0600716C1F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B5975DE029BAAD0600716C1F /* blinksExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B545917329BACCA70060CD48 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		B545917929BAD1AA0060CD48 /* SupabaseClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseClientManager.swift; sourceTree = "<group>"; };
+		B545917C29BAD8620060CD48 /* MainNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigation.swift; sourceTree = "<group>"; };
+		B545917E29BADAD90060CD48 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		B545918029BADC9A0060CD48 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		B545918229BADCA10060CD48 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		B545918529BAE0170060CD48 /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
+		B545918929BAE1070060CD48 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		B545918B29BAE14F0060CD48 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		B545918D29BC12450060CD48 /* CameraControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControlsView.swift; sourceTree = "<group>"; };
+		B584FB7329BC7FE700598849 /* CapturedPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturedPhotoView.swift; sourceTree = "<group>"; };
+		B584FB7729BD017400598849 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
 		B5975D9A29BAACED00716C1F /* blink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5975D9D29BAACED00716C1F /* blinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blinkApp.swift; sourceTree = "<group>"; };
 		B5975D9F29BAACED00716C1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +102,19 @@
 		B5975DB429BAACEE00716C1F /* blinkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blinkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5975DB829BAACEE00716C1F /* blinkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blinkUITests.swift; sourceTree = "<group>"; };
 		B5975DBA29BAACEE00716C1F /* blinkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blinkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B5975DCB29BAAD0500716C1F /* blinksExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = blinksExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5975DCD29BAAD0500716C1F /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		B5975DCF29BAAD0500716C1F /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		B5975DD229BAAD0500716C1F /* blinksBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blinksBundle.swift; sourceTree = "<group>"; };
+		B5975DD429BAAD0500716C1F /* blinksLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blinksLiveActivity.swift; sourceTree = "<group>"; };
+		B5975DD629BAAD0500716C1F /* blinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blinks.swift; sourceTree = "<group>"; };
+		B5975DD829BAAD0500716C1F /* blinks.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = blinks.intentdefinition; sourceTree = "<group>"; };
+		B5975DD929BAAD0600716C1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5975DDB29BAAD0600716C1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5E0A7C629BD167500136773 /* CapturedPhotoControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturedPhotoControls.swift; sourceTree = "<group>"; };
+		B5E34D3329BEA790009B872C /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
+		B5E34D3529BFE197009B872C /* blink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = blink.entitlements; sourceTree = "<group>"; };
+		B5E3D4C729BFE31B007EFD8D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B545917729BAD11E0060CD48 /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,15 +140,90 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5975DC829BAAD0500716C1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5975DD029BAAD0500716C1F /* SwiftUI.framework in Frameworks */,
+				B5975DCE29BAAD0500716C1F /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B545917129BACC8F0060CD48 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5E0A7C529BD14EB00136773 /* CameraControls */,
+				B584FB7629BD014F00598849 /* CameraView */,
+				B545917B29BAD7ED0060CD48 /* Navigation */,
+				B545917229BACC9A0060CD48 /* Screens */,
+				B545918B29BAE14F0060CD48 /* CameraView.swift */,
+				B584FB7329BC7FE700598849 /* CapturedPhotoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B545917229BACC9A0060CD48 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B545917329BACCA70060CD48 /* Login.swift */,
+				B545917E29BADAD90060CD48 /* Main.swift */,
+				B545918029BADC9A0060CD48 /* Profile.swift */,
+				B545918229BADCA10060CD48 /* Messages.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B545917829BAD19C0060CD48 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B545917929BAD1AA0060CD48 /* SupabaseClientManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B545917B29BAD7ED0060CD48 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B545917C29BAD8620060CD48 /* MainNavigation.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		B545918429BADF9B0060CD48 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B545918529BAE0170060CD48 /* CameraModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B545918829BAE0E60060CD48 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B545918929BAE1070060CD48 /* CameraViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B584FB7629BD014F00598849 /* CameraView */ = {
+			isa = PBXGroup;
+			children = (
+				B584FB7729BD017400598849 /* CameraPreview.swift */,
+			);
+			path = CameraView;
+			sourceTree = "<group>";
+		};
 		B5975D9129BAACED00716C1F = {
 			isa = PBXGroup;
 			children = (
 				B5975D9C29BAACED00716C1F /* blink */,
 				B5975DAD29BAACEE00716C1F /* blinkTests */,
 				B5975DB729BAACEE00716C1F /* blinkUITests */,
+				B5975DD129BAAD0500716C1F /* blinks */,
+				B5975DCC29BAAD0500716C1F /* Frameworks */,
 				B5975D9B29BAACED00716C1F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +234,7 @@
 				B5975D9A29BAACED00716C1F /* blink.app */,
 				B5975DAA29BAACEE00716C1F /* blinkTests.xctest */,
 				B5975DB429BAACEE00716C1F /* blinkUITests.xctest */,
+				B5975DCB29BAAD0500716C1F /* blinksExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -94,6 +242,12 @@
 		B5975D9C29BAACED00716C1F /* blink */ = {
 			isa = PBXGroup;
 			children = (
+				B5E34D3529BFE197009B872C /* blink.entitlements */,
+				B5E34D3229BEA74D009B872C /* Services */,
+				B545918829BAE0E60060CD48 /* ViewModels */,
+				B545918429BADF9B0060CD48 /* Models */,
+				B545917829BAD19C0060CD48 /* Helpers */,
+				B545917129BACC8F0060CD48 /* Views */,
 				B5975D9D29BAACED00716C1F /* blinkApp.swift */,
 				B5975D9F29BAACED00716C1F /* ContentView.swift */,
 				B5975DA129BAACEE00716C1F /* Assets.xcassets */,
@@ -127,6 +281,46 @@
 			path = blinkUITests;
 			sourceTree = "<group>";
 		};
+		B5975DCC29BAAD0500716C1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5975DCD29BAAD0500716C1F /* WidgetKit.framework */,
+				B5975DCF29BAAD0500716C1F /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5975DD129BAAD0500716C1F /* blinks */ = {
+			isa = PBXGroup;
+			children = (
+				B5975DD229BAAD0500716C1F /* blinksBundle.swift */,
+				B5975DD429BAAD0500716C1F /* blinksLiveActivity.swift */,
+				B5975DD629BAAD0500716C1F /* blinks.swift */,
+				B5975DD829BAAD0500716C1F /* blinks.intentdefinition */,
+				B5975DD929BAAD0600716C1F /* Assets.xcassets */,
+				B5975DDB29BAAD0600716C1F /* Info.plist */,
+			);
+			path = blinks;
+			sourceTree = "<group>";
+		};
+		B5E0A7C529BD14EB00136773 /* CameraControls */ = {
+			isa = PBXGroup;
+			children = (
+				B545918D29BC12450060CD48 /* CameraControlsView.swift */,
+				B5E0A7C629BD167500136773 /* CapturedPhotoControls.swift */,
+			);
+			path = CameraControls;
+			sourceTree = "<group>";
+		};
+		B5E34D3229BEA74D009B872C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B5E34D3329BEA790009B872C /* PhotoService.swift */,
+				B5E3D4C729BFE31B007EFD8D /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,12 +331,17 @@
 				B5975D9629BAACED00716C1F /* Sources */,
 				B5975D9729BAACED00716C1F /* Frameworks */,
 				B5975D9829BAACED00716C1F /* Resources */,
+				B5975DE429BAAD0600716C1F /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B5975DDF29BAAD0600716C1F /* PBXTargetDependency */,
 			);
 			name = blink;
+			packageProductDependencies = (
+				B545917629BAD11E0060CD48 /* Supabase */,
+			);
 			productName = blink;
 			productReference = B5975D9A29BAACED00716C1F /* blink.app */;
 			productType = "com.apple.product-type.application";
@@ -183,6 +382,23 @@
 			productReference = B5975DB429BAACEE00716C1F /* blinkUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B5975DCA29BAAD0500716C1F /* blinksExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5975DE129BAAD0600716C1F /* Build configuration list for PBXNativeTarget "blinksExtension" */;
+			buildPhases = (
+				B5975DC729BAAD0500716C1F /* Sources */,
+				B5975DC829BAAD0500716C1F /* Frameworks */,
+				B5975DC929BAAD0500716C1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = blinksExtension;
+			productName = blinksExtension;
+			productReference = B5975DCB29BAAD0500716C1F /* blinksExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +420,9 @@
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = B5975D9929BAACED00716C1F;
 					};
+					B5975DCA29BAAD0500716C1F = {
+						CreatedOnToolsVersion = 14.2;
+					};
 				};
 			};
 			buildConfigurationList = B5975D9529BAACED00716C1F /* Build configuration list for PBXProject "blink" */;
@@ -215,6 +434,9 @@
 				Base,
 			);
 			mainGroup = B5975D9129BAACED00716C1F;
+			packageReferences = (
+				B545917529BAD11E0060CD48 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = B5975D9B29BAACED00716C1F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -222,6 +444,7 @@
 				B5975D9929BAACED00716C1F /* blink */,
 				B5975DA929BAACEE00716C1F /* blinkTests */,
 				B5975DB329BAACEE00716C1F /* blinkUITests */,
+				B5975DCA29BAAD0500716C1F /* blinksExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +473,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5975DC929BAAD0500716C1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5975DDA29BAAD0600716C1F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,8 +488,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B584FB7829BD017400598849 /* CameraPreview.swift in Sources */,
+				B545918E29BC12450060CD48 /* CameraControlsView.swift in Sources */,
+				B545917D29BAD8620060CD48 /* MainNavigation.swift in Sources */,
+				B5E3D4C829BFE31B007EFD8D /* AuthService.swift in Sources */,
+				B545918329BADCA10060CD48 /* Messages.swift in Sources */,
+				B545918629BAE0170060CD48 /* CameraModel.swift in Sources */,
+				B545918C29BAE14F0060CD48 /* CameraView.swift in Sources */,
+				B545918129BADC9A0060CD48 /* Profile.swift in Sources */,
 				B5975DA029BAACED00716C1F /* ContentView.swift in Sources */,
+				B545917A29BAD1AA0060CD48 /* SupabaseClientManager.swift in Sources */,
 				B5975D9E29BAACED00716C1F /* blinkApp.swift in Sources */,
+				B545918A29BAE1070060CD48 /* CameraViewModel.swift in Sources */,
+				B5975DDD29BAAD0600716C1F /* blinks.intentdefinition in Sources */,
+				B5E0A7C729BD167500136773 /* CapturedPhotoControls.swift in Sources */,
+				B584FB7429BC7FE700598849 /* CapturedPhotoView.swift in Sources */,
+				B5E34D3429BEA790009B872C /* PhotoService.swift in Sources */,
+				B545917F29BADAD90060CD48 /* Main.swift in Sources */,
+				B545917429BACCA70060CD48 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +526,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B5975DC729BAAD0500716C1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5975DD329BAAD0500716C1F /* blinksBundle.swift in Sources */,
+				B5975DD529BAAD0500716C1F /* blinksLiveActivity.swift in Sources */,
+				B5975DD729BAAD0500716C1F /* blinks.swift in Sources */,
+				B5975DDC29BAAD0600716C1F /* blinks.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +549,11 @@
 			isa = PBXTargetDependency;
 			target = B5975D9929BAACED00716C1F /* blink */;
 			targetProxy = B5975DB529BAACEE00716C1F /* PBXContainerItemProxy */;
+		};
+		B5975DDF29BAAD0600716C1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5975DCA29BAAD0500716C1F /* blinksExtension */;
+			targetProxy = B5975DDE29BAAD0600716C1F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -412,14 +675,18 @@
 		B5975DBF29BAACEE00716C1F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = blink/blink.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"blink/Preview Content\"";
 				DEVELOPMENT_TEAM = 4J6D7M7D79;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -441,14 +708,18 @@
 		B5975DC029BAACEE00716C1F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = blink/blink.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"blink/Preview Content\"";
 				DEVELOPMENT_TEAM = 4J6D7M7D79;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.social-networking";
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -543,6 +814,60 @@
 			};
 			name = Release;
 		};
+		B5975DE229BAAD0600716C1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4J6D7M7D79;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = blinks/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = blinks;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenixbyte.blink.blinks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5975DE329BAAD0600716C1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4J6D7M7D79;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = blinks/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = blinks;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zenixbyte.blink.blinks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -582,7 +907,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		B5975DE129BAAD0600716C1F /* Build configuration list for PBXNativeTarget "blinksExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5975DE229BAAD0600716C1F /* Debug */,
+				B5975DE329BAAD0600716C1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B545917529BAD11E0060CD48 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B545917629BAD11E0060CD48 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B545917529BAD11E0060CD48 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B5975D9229BAACED00716C1F /* Project object */;
 }
