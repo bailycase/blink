@@ -7,21 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B545917429BACCA70060CD48 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545917329BACCA70060CD48 /* Login.swift */; };
 		B545917729BAD11E0060CD48 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = B545917629BAD11E0060CD48 /* Supabase */; };
 		B545917A29BAD1AA0060CD48 /* SupabaseClientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545917929BAD1AA0060CD48 /* SupabaseClientManager.swift */; };
-		B545917D29BAD8620060CD48 /* MainNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545917C29BAD8620060CD48 /* MainNavigation.swift */; };
-		B545917F29BADAD90060CD48 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545917E29BADAD90060CD48 /* Main.swift */; };
-		B545918129BADC9A0060CD48 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545918029BADC9A0060CD48 /* Profile.swift */; };
-		B545918329BADCA10060CD48 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545918229BADCA10060CD48 /* Messages.swift */; };
-		B545918629BAE0170060CD48 /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545918529BAE0170060CD48 /* CameraModel.swift */; };
-		B545918A29BAE1070060CD48 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545918929BAE1070060CD48 /* CameraViewModel.swift */; };
-		B545918C29BAE14F0060CD48 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545918B29BAE14F0060CD48 /* CameraView.swift */; };
-		B545918E29BC12450060CD48 /* CameraControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B545918D29BC12450060CD48 /* CameraControlsView.swift */; };
-		B584FB7429BC7FE700598849 /* CapturedPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584FB7329BC7FE700598849 /* CapturedPhotoView.swift */; };
-		B584FB7829BD017400598849 /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584FB7729BD017400598849 /* CameraPreview.swift */; };
-		B5975D9E29BAACED00716C1F /* blinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5975D9D29BAACED00716C1F /* blinkApp.swift */; };
-		B5975DA029BAACED00716C1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5975D9F29BAACED00716C1F /* ContentView.swift */; };
+		B5975D9E29BAACED00716C1F /* BlinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5975D9D29BAACED00716C1F /* BlinkApp.swift */; };
+		B5975DA029BAACED00716C1F /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5975D9F29BAACED00716C1F /* AppView.swift */; };
 		B5975DA229BAACEE00716C1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5975DA129BAACEE00716C1F /* Assets.xcassets */; };
 		B5975DA529BAACEE00716C1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5975DA429BAACEE00716C1F /* Preview Assets.xcassets */; };
 		B5975DAF29BAACEE00716C1F /* blinkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5975DAE29BAACEE00716C1F /* blinkTests.swift */; };
@@ -36,9 +25,20 @@
 		B5975DDC29BAAD0600716C1F /* blinks.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B5975DD829BAAD0500716C1F /* blinks.intentdefinition */; };
 		B5975DDD29BAAD0600716C1F /* blinks.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = B5975DD829BAAD0500716C1F /* blinks.intentdefinition */; };
 		B5975DE029BAAD0600716C1F /* blinksExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B5975DCB29BAAD0500716C1F /* blinksExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		B5E0A7C729BD167500136773 /* CapturedPhotoControls.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E0A7C629BD167500136773 /* CapturedPhotoControls.swift */; };
-		B5E34D3429BEA790009B872C /* PhotoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E34D3329BEA790009B872C /* PhotoService.swift */; };
-		B5E3D4C829BFE31B007EFD8D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D4C729BFE31B007EFD8D /* AuthService.swift */; };
+		B5E3D4D429C000FC007EFD8D /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3D4D329C000FC007EFD8D /* Color.swift */; };
+		B5E9AB3429C27AC300A3CAC6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9AB3329C27AC300A3CAC6 /* SessionManager.swift */; };
+		B5E9AB3829C27D3800A3CAC6 /* SessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9AB3729C27D3800A3CAC6 /* SessionModel.swift */; };
+		B5E9AB3C29C2871300A3CAC6 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9AB3B29C2871300A3CAC6 /* AuthService.swift */; };
+		B5E9AB3F29C2899800A3CAC6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9AB3E29C2899800A3CAC6 /* LoginView.swift */; };
+		B5E9AB4229C28B9400A3CAC6 /* AuthenticationNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9AB4129C28B9400A3CAC6 /* AuthenticationNavigationView.swift */; };
+		B5E9AB4529C28C1200A3CAC6 /* AuthenticationNavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9AB4429C28C1200A3CAC6 /* AuthenticationNavigationViewModel.swift */; };
+		B5E9AB4729C28D3700A3CAC6 /* VerifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9AB4629C28D3700A3CAC6 /* VerifyView.swift */; };
+		B5E9AB4A29C2951000A3CAC6 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B5E9AB4929C2951000A3CAC6 /* KeychainSwift */; };
+		B5E9AB4C29C2951B00A3CAC6 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9AB4B29C2951B00A3CAC6 /* KeychainManager.swift */; };
+		B5E9AB4F29C297C600A3CAC6 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9AB4E29C297C600A3CAC6 /* CameraView.swift */; };
+		B5E9AB5229C2997D00A3CAC6 /* MainNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9AB5129C2997D00A3CAC6 /* MainNavigation.swift */; };
+		B5E9AB5429C29ACD00A3CAC6 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9AB5329C29ACD00A3CAC6 /* ProfileView.swift */; };
+		B5E9AB5629C29AD700A3CAC6 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E9AB5529C29AD700A3CAC6 /* MessagesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,21 +80,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B545917329BACCA70060CD48 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		B545917929BAD1AA0060CD48 /* SupabaseClientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupabaseClientManager.swift; sourceTree = "<group>"; };
-		B545917C29BAD8620060CD48 /* MainNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigation.swift; sourceTree = "<group>"; };
-		B545917E29BADAD90060CD48 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
-		B545918029BADC9A0060CD48 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		B545918229BADCA10060CD48 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
-		B545918529BAE0170060CD48 /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
-		B545918929BAE1070060CD48 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
-		B545918B29BAE14F0060CD48 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
-		B545918D29BC12450060CD48 /* CameraControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraControlsView.swift; sourceTree = "<group>"; };
-		B584FB7329BC7FE700598849 /* CapturedPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturedPhotoView.swift; sourceTree = "<group>"; };
-		B584FB7729BD017400598849 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
 		B5975D9A29BAACED00716C1F /* blink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blink.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5975D9D29BAACED00716C1F /* blinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blinkApp.swift; sourceTree = "<group>"; };
-		B5975D9F29BAACED00716C1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B5975D9D29BAACED00716C1F /* BlinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlinkApp.swift; sourceTree = "<group>"; };
+		B5975D9F29BAACED00716C1F /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		B5975DA129BAACEE00716C1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5975DA429BAACEE00716C1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5975DAA29BAACEE00716C1F /* blinkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blinkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,10 +100,20 @@
 		B5975DD829BAAD0500716C1F /* blinks.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = blinks.intentdefinition; sourceTree = "<group>"; };
 		B5975DD929BAAD0600716C1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5975DDB29BAAD0600716C1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5E0A7C629BD167500136773 /* CapturedPhotoControls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturedPhotoControls.swift; sourceTree = "<group>"; };
-		B5E34D3329BEA790009B872C /* PhotoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoService.swift; sourceTree = "<group>"; };
 		B5E34D3529BFE197009B872C /* blink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = blink.entitlements; sourceTree = "<group>"; };
-		B5E3D4C729BFE31B007EFD8D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		B5E3D4D329C000FC007EFD8D /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B5E9AB3329C27AC300A3CAC6 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		B5E9AB3729C27D3800A3CAC6 /* SessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionModel.swift; sourceTree = "<group>"; };
+		B5E9AB3B29C2871300A3CAC6 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		B5E9AB3E29C2899800A3CAC6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B5E9AB4129C28B9400A3CAC6 /* AuthenticationNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationNavigationView.swift; sourceTree = "<group>"; };
+		B5E9AB4429C28C1200A3CAC6 /* AuthenticationNavigationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationNavigationViewModel.swift; sourceTree = "<group>"; };
+		B5E9AB4629C28D3700A3CAC6 /* VerifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyView.swift; sourceTree = "<group>"; };
+		B5E9AB4B29C2951B00A3CAC6 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		B5E9AB4E29C297C600A3CAC6 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		B5E9AB5129C2997D00A3CAC6 /* MainNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigation.swift; sourceTree = "<group>"; };
+		B5E9AB5329C29ACD00A3CAC6 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		B5E9AB5529C29AD700A3CAC6 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E9AB4A29C2951000A3CAC6 /* KeychainSwift in Frameworks */,
 				B545917729BAD11E0060CD48 /* Supabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,68 +152,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B545917129BACC8F0060CD48 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				B5E0A7C529BD14EB00136773 /* CameraControls */,
-				B584FB7629BD014F00598849 /* CameraView */,
-				B545917B29BAD7ED0060CD48 /* Navigation */,
-				B545917229BACC9A0060CD48 /* Screens */,
-				B545918B29BAE14F0060CD48 /* CameraView.swift */,
-				B584FB7329BC7FE700598849 /* CapturedPhotoView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		B545917229BACC9A0060CD48 /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				B545917329BACCA70060CD48 /* Login.swift */,
-				B545917E29BADAD90060CD48 /* Main.swift */,
-				B545918029BADC9A0060CD48 /* Profile.swift */,
-				B545918229BADCA10060CD48 /* Messages.swift */,
-			);
-			path = Screens;
-			sourceTree = "<group>";
-		};
-		B545917829BAD19C0060CD48 /* Helpers */ = {
+		B545917829BAD19C0060CD48 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
 				B545917929BAD1AA0060CD48 /* SupabaseClientManager.swift */,
+				B5E9AB3329C27AC300A3CAC6 /* SessionManager.swift */,
+				B5E9AB4B29C2951B00A3CAC6 /* KeychainManager.swift */,
 			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		B545917B29BAD7ED0060CD48 /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				B545917C29BAD8620060CD48 /* MainNavigation.swift */,
-			);
-			path = Navigation;
-			sourceTree = "<group>";
-		};
-		B545918429BADF9B0060CD48 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				B545918529BAE0170060CD48 /* CameraModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		B545918829BAE0E60060CD48 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				B545918929BAE1070060CD48 /* CameraViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		B584FB7629BD014F00598849 /* CameraView */ = {
-			isa = PBXGroup;
-			children = (
-				B584FB7729BD017400598849 /* CameraPreview.swift */,
-			);
-			path = CameraView;
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		B5975D9129BAACED00716C1F = {
@@ -242,14 +188,15 @@
 		B5975D9C29BAACED00716C1F /* blink */ = {
 			isa = PBXGroup;
 			children = (
+				B5E9AB4329C28C0500A3CAC6 /* ViewModels */,
+				B5E9AB3D29C2898E00A3CAC6 /* Views */,
+				B5E9AB3A29C2870900A3CAC6 /* Services */,
+				B5E9AB3629C27D2E00A3CAC6 /* Models */,
+				B5E3D4D229C000F0007EFD8D /* Extensions */,
 				B5E34D3529BFE197009B872C /* blink.entitlements */,
-				B5E34D3229BEA74D009B872C /* Services */,
-				B545918829BAE0E60060CD48 /* ViewModels */,
-				B545918429BADF9B0060CD48 /* Models */,
-				B545917829BAD19C0060CD48 /* Helpers */,
-				B545917129BACC8F0060CD48 /* Views */,
-				B5975D9D29BAACED00716C1F /* blinkApp.swift */,
-				B5975D9F29BAACED00716C1F /* ContentView.swift */,
+				B545917829BAD19C0060CD48 /* Managers */,
+				B5975D9D29BAACED00716C1F /* BlinkApp.swift */,
+				B5975D9F29BAACED00716C1F /* AppView.swift */,
 				B5975DA129BAACEE00716C1F /* Assets.xcassets */,
 				B5975DA329BAACEE00716C1F /* Preview Content */,
 			);
@@ -303,22 +250,66 @@
 			path = blinks;
 			sourceTree = "<group>";
 		};
-		B5E0A7C529BD14EB00136773 /* CameraControls */ = {
+		B5E3D4D229C000F0007EFD8D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B545918D29BC12450060CD48 /* CameraControlsView.swift */,
-				B5E0A7C629BD167500136773 /* CapturedPhotoControls.swift */,
+				B5E3D4D329C000FC007EFD8D /* Color.swift */,
 			);
-			path = CameraControls;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
-		B5E34D3229BEA74D009B872C /* Services */ = {
+		B5E9AB3629C27D2E00A3CAC6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B5E34D3329BEA790009B872C /* PhotoService.swift */,
-				B5E3D4C729BFE31B007EFD8D /* AuthService.swift */,
+				B5E9AB3729C27D3800A3CAC6 /* SessionModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B5E9AB3A29C2870900A3CAC6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B5E9AB3B29C2871300A3CAC6 /* AuthService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		B5E9AB3D29C2898E00A3CAC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5E9AB4D29C296EE00A3CAC6 /* Main */,
+				B5E9AB4029C28B8400A3CAC6 /* Authentication */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5E9AB4029C28B8400A3CAC6 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				B5E9AB3E29C2899800A3CAC6 /* LoginView.swift */,
+				B5E9AB4129C28B9400A3CAC6 /* AuthenticationNavigationView.swift */,
+				B5E9AB4629C28D3700A3CAC6 /* VerifyView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		B5E9AB4329C28C0500A3CAC6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B5E9AB4429C28C1200A3CAC6 /* AuthenticationNavigationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B5E9AB4D29C296EE00A3CAC6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B5E9AB4E29C297C600A3CAC6 /* CameraView.swift */,
+				B5E9AB5129C2997D00A3CAC6 /* MainNavigation.swift */,
+				B5E9AB5329C29ACD00A3CAC6 /* ProfileView.swift */,
+				B5E9AB5529C29AD700A3CAC6 /* MessagesView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +332,7 @@
 			name = blink;
 			packageProductDependencies = (
 				B545917629BAD11E0060CD48 /* Supabase */,
+				B5E9AB4929C2951000A3CAC6 /* KeychainSwift */,
 			);
 			productName = blink;
 			productReference = B5975D9A29BAACED00716C1F /* blink.app */;
@@ -436,6 +428,7 @@
 			mainGroup = B5975D9129BAACED00716C1F;
 			packageReferences = (
 				B545917529BAD11E0060CD48 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+				B5E9AB4829C2951000A3CAC6 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 			);
 			productRefGroup = B5975D9B29BAACED00716C1F /* Products */;
 			projectDirPath = "";
@@ -488,24 +481,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B584FB7829BD017400598849 /* CameraPreview.swift in Sources */,
-				B545918E29BC12450060CD48 /* CameraControlsView.swift in Sources */,
-				B545917D29BAD8620060CD48 /* MainNavigation.swift in Sources */,
-				B5E3D4C829BFE31B007EFD8D /* AuthService.swift in Sources */,
-				B545918329BADCA10060CD48 /* Messages.swift in Sources */,
-				B545918629BAE0170060CD48 /* CameraModel.swift in Sources */,
-				B545918C29BAE14F0060CD48 /* CameraView.swift in Sources */,
-				B545918129BADC9A0060CD48 /* Profile.swift in Sources */,
-				B5975DA029BAACED00716C1F /* ContentView.swift in Sources */,
+				B5E9AB4C29C2951B00A3CAC6 /* KeychainManager.swift in Sources */,
+				B5E9AB4F29C297C600A3CAC6 /* CameraView.swift in Sources */,
+				B5E9AB5629C29AD700A3CAC6 /* MessagesView.swift in Sources */,
+				B5975DA029BAACED00716C1F /* AppView.swift in Sources */,
+				B5E9AB3829C27D3800A3CAC6 /* SessionModel.swift in Sources */,
 				B545917A29BAD1AA0060CD48 /* SupabaseClientManager.swift in Sources */,
-				B5975D9E29BAACED00716C1F /* blinkApp.swift in Sources */,
-				B545918A29BAE1070060CD48 /* CameraViewModel.swift in Sources */,
+				B5E9AB4729C28D3700A3CAC6 /* VerifyView.swift in Sources */,
+				B5E9AB3F29C2899800A3CAC6 /* LoginView.swift in Sources */,
+				B5975D9E29BAACED00716C1F /* BlinkApp.swift in Sources */,
+				B5E9AB5429C29ACD00A3CAC6 /* ProfileView.swift in Sources */,
+				B5E9AB4529C28C1200A3CAC6 /* AuthenticationNavigationViewModel.swift in Sources */,
+				B5E9AB5229C2997D00A3CAC6 /* MainNavigation.swift in Sources */,
+				B5E9AB3429C27AC300A3CAC6 /* SessionManager.swift in Sources */,
+				B5E9AB3C29C2871300A3CAC6 /* AuthService.swift in Sources */,
+				B5E3D4D429C000FC007EFD8D /* Color.swift in Sources */,
+				B5E9AB4229C28B9400A3CAC6 /* AuthenticationNavigationView.swift in Sources */,
 				B5975DDD29BAAD0600716C1F /* blinks.intentdefinition in Sources */,
-				B5E0A7C729BD167500136773 /* CapturedPhotoControls.swift in Sources */,
-				B584FB7429BC7FE700598849 /* CapturedPhotoView.swift in Sources */,
-				B5E34D3429BEA790009B872C /* PhotoService.swift in Sources */,
-				B545917F29BADAD90060CD48 /* Main.swift in Sources */,
-				B545917429BACCA70060CD48 /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -681,7 +673,7 @@
 				CODE_SIGN_ENTITLEMENTS = blink/blink.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"blink/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4J6D7M7D79;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -714,7 +706,7 @@
 				CODE_SIGN_ENTITLEMENTS = blink/blink.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"blink/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4J6D7M7D79;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -927,6 +919,14 @@
 				minimumVersion = 0.2.0;
 			};
 		};
+		B5E9AB4829C2951000A3CAC6 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 20.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -934,6 +934,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = B545917529BAD11E0060CD48 /* XCRemoteSwiftPackageReference "supabase-swift" */;
 			productName = Supabase;
+		};
+		B5E9AB4929C2951000A3CAC6 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B5E9AB4829C2951000A3CAC6 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
