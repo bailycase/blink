@@ -8,30 +8,24 @@
 import SwiftUI
 
 struct AuthenticationNavigationView: View {
-    @StateObject var vm: AuthenticationNavigationViewModel
-    
-    init(vm: AuthenticationNavigationViewModel = .init()) {
-        _vm = StateObject(wrappedValue: vm)
-    }
+    @ObservedObject var vm = AuthenticationNavigationViewModel.shared
     
     var body: some View {
-        NavigationStack(path: $vm.currentPath ) {
-            VStack {
-                Text("Landing View :)")
-                Button(action: { vm.navigate(path: .Login) }) {
-                    Text("Get Started").foregroundColor(.blue)
-                }
+        ZStack {
+            switch vm.onboardingState.currentStep {
+            case .landing:
+                LandingView(authVM: vm).transition(.move(edge: .leading))
+            case .login:
+                LoginView(vm: vm.makeLoginViewVM(), authNavigation: vm).transition(.move(edge: .leading))
+            case.verify:
+                VerifyView(vm: vm.makeVerifyViewVM()).tag(OnboardingState.Step.verify).transition(.move(edge: .leading))
+            case.setupName:
+                SetupName(vm: vm.makeSetupNameVM()).tag(OnboardingState.Step.setupName)
             }
-            .navigationDestination(for: Path.self) { path in
-                switch path {
-                case .Login:
-                    LoginView()
-                case .Verify:
-                    VerifyView()
-                }
-                
-            }
-        }.environmentObject(vm)
+        }
+        .animation(.easeInOut(duration: 0.3), value: vm.onboardingState.currentStep)
+        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+        .environmentObject(vm)
     }
 }
 

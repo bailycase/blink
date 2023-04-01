@@ -1,6 +1,24 @@
 {
   "pins" : [
     {
+      "identity" : "agorartcengine_ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AgoraIO/AgoraRtcEngine_iOS.git",
+      "state" : {
+        "revision" : "13f007dff53e2c670ad645fae43e3fcea8f4df6c",
+        "version" : "4.1.1"
+      }
+    },
+    {
+      "identity" : "bottomsheet",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lucaszischka/BottomSheet",
+      "state" : {
+        "revision" : "4c9ef84552712e0117c37d4893270fdc28fb9288",
+        "version" : "3.1.0"
+      }
+    },
+    {
       "identity" : "functions-swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/supabase-community/functions-swift",
@@ -52,6 +70,15 @@
       "state" : {
         "revision" : "84e546727d66f1adc5439debad16270d0fdd04e7",
         "version" : "4.2.2"
+      }
+    },
+    {
+      "identity" : "pathpresenter",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AlexRoar/PathPresenter",
+      "state" : {
+        "revision" : "1285a52b469baf86912aaeabbdcd8a33b5356504",
+        "version" : "1.1.1"
       }
     },
     {

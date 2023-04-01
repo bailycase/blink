@@ -10,11 +10,17 @@ import SwiftUI
 
 @main
 struct BlinkApp: App {
-    @StateObject private var sessionManager = SessionManager()
+    // Register the App Delegate
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
-            AppView()
-                .environmentObject(sessionManager)
+            ZStack {
+                Color.theme.primary
+                AppView()
+                    .preferredColorScheme(.dark)
+                    .background(Color.theme.background)
+            }
         }
     }
 }

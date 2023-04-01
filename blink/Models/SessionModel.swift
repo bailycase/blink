@@ -7,28 +7,29 @@
 
 import Foundation
 
-struct SessionModel {
-    var token: String?
-    var phoneNumber: String?
+struct SessionModel: Codable {
+    var id: String?
+    var isAuthenticated: Bool = false
+    var accessToken: String?
+    var refreshToken: String?
     var firstName: String?
     var lastName: String?
-    var isAuthenticated: Bool = false
 }
 
 extension SessionModel {
     init(session: SessionModel) {
         self.init(
-            token: session.token,
-            phoneNumber: session.phoneNumber,
-            isAuthenticated: true
+            id: session.id,
+            isAuthenticated: true,
+            accessToken: session.accessToken,
+            refreshToken: session.refreshToken
         )
     }
     
     mutating func clear() {
+        self.id = nil
         self.isAuthenticated = false
-        self.phoneNumber = nil
-        self.token = nil
-        self.firstName = nil
-        self.lastName = nil
+        self.accessToken = nil
+        self.refreshToken = nil
     }
 }

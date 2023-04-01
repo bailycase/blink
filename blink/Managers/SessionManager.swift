@@ -7,67 +7,55 @@
 
 import Foundation
 import Combine
+import GoTrue
 
-
-@MainActor
-public class SessionManager: ObservableObject {
-    private let authService = AuthService()
+protocol SessionManagerProtocol {
+    var session: SessionModel { get }
     
-    @Published var session: SessionModel {
-        didSet {
-            if let token = session.token {
-                KeychainManager.shared.set(token, forKey: "userToken")
+    func setSession(_ session: SessionModel)
+    func signOut()
+}
+
+public class SessionManager: ObservableObject, SessionManagerProtocol {
+    public static var shared = SessionManager()
+    private let keychainManager = KeychainManager()
+    
+    @Published var session: SessionModel
+    
+    init() {
+        var isAuthenticated = false
+        
+        // get a session from the keychain if exists
+        let keychainSession: SessionModel? = keychainManager.get("blink-session")
+        
+        // restore the session
+        if let session = keychainSession {
+            self.session = session
+            if let cookies = URLSession.shared.configuration.httpCookieStorage?.cookies {
+                for cookie in cookies {
+                    HTTPCookieStorage.shared.setCookie(cookie)
+                    if cookie.name == "blink-access-token" {
+                        isAuthenticated = true
+                    }
+                }
             }
-        }
-    }
-    
-    internal init() {
-        self.session = SessionModel(token: "")
-        
-        if let token = KeychainManager.shared.get("userToken") {
-            self.session.token = token
-            self.session.isAuthenticated = true
-        }
-    }
-    
-    public func login(withPhoneNumber: String, completion: @escaping () -> Void) async {
-        do {
-            try await authService.login(withPhoneNumber: withPhoneNumber)
-            self.session.phoneNumber = withPhoneNumber
-            completion()
-        } catch {
-            // Handle login error
-            print("error while logging in: \(error)")
-        }
-    }
-    
-    public func verify(withCode: String) async {
-        guard let phoneNumber = self.session.phoneNumber else {
-            print("Error: phoneNumber is not set.")
-            return
+        } else {
+            self.session = SessionModel(isAuthenticated: isAuthenticated)
         }
         
-        do {
-            try await authService.verify(withPhoneNumber: phoneNumber, withCode: withCode)
-            let session = try await authService.getSession()
-            
-            self.session.isAuthenticated = true
-            self.session.phoneNumber = session.user.phone
-            self.session.token = session.accessToken
-        } catch {
-            print("error while verifying code: \(error)")
-        }
     }
     
-    public func logout() async {
-        do {
-            try await authService.logout()
-            // clear the model
-            self.session.clear()
-            // clear out the keychain
-            KeychainManager.shared.delete("userToken")
-        } catch {
-            print("error while logging out: \(error)")
-        }
+    // MARK: Public Methods
+    
+    // Sets the session in shared state, and writes the session to the keychain
+    func setSession(_ session: SessionModel) {
+        self.session = session
+        keychainManager.set(session, forKey: "blink-session")
+    }
+    
+    public func signOut() {
+        keychainManager.delete("blink-session")
+        self.session = SessionModel(isAuthenticated: false)
     }
 }
+

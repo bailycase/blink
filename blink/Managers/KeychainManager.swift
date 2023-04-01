@@ -9,16 +9,22 @@ import Foundation
 import KeychainSwift
 
 class KeychainManager {
-    static let shared = KeychainManager()
-    
     let keychain = KeychainSwift()
     
-    func set(_ value: String, forKey key: String) {
-        keychain.set(value, forKey: key)
+    func set<T: Encodable>(_ value: T?, forKey key: String) {
+        if let jsonData = try? JSONEncoder().encode(value) {
+            keychain.set(jsonData, forKey: key)
+        } else {
+            print("Failed to encode value for key \(key)")
+        }
     }
     
-    func get(_ key: String) -> String? {
-        keychain.get(key)
+    func get<T: Decodable>(_ key: String) -> T? {
+        if let jsonData = keychain.getData(key) {
+            return try? JSONDecoder().decode(T.self, from: jsonData)
+        } else {
+            return nil
+        }
     }
     
     func delete(_ key: String) {

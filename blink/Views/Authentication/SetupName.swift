@@ -1,5 +1,5 @@
 //
-//  LoginView.swift
+//  SetupName.swift
 //  blink
 //
 //  Created by Baily Case on 3/15/23.
@@ -7,34 +7,22 @@
 
 import SwiftUI
 
-struct LoginView: View {
-    @StateObject var authNavigation: AuthenticationNavigationViewModel
-    @StateObject var vm: LoginViewModel
+struct SetupName: View {
+    //    @EnvironmentObject var sessionManager: SessionManager
+    //    @EnvironmentObject var navigation: AuthenticationNavigationViewModel
+    @StateObject var vm: SetupNameViewModel
     @FocusState var autoFocus: Bool
     
-    init(vm: LoginViewModel, authNavigation: AuthenticationNavigationViewModel) {
+    init(vm: SetupNameViewModel) {
         _vm = StateObject(wrappedValue: vm)
-        _authNavigation = StateObject(wrappedValue: authNavigation)
     }
     
     var body: some View {
         VStack(alignment: .leading) {
-            if let error = vm.error {
-                Text(error)
-            }
-            Button(action: {
-                autoFocus = false
-                authNavigation.goBack()
-            }) {
-                Image(systemName: "arrow.left").font(.title)
-            }
-            .frame(width: 50, height: 50)
-            .background(.ultraThinMaterial)
-            .clipShape(Circle())
             VStack(alignment: .center) {
                 Spacer()
-                Text("What's your number?").font(.title)
-                TextField("", text: $vm.phoneNumber)
+                Text("Enter your name").font(.title)
+                TextField("", text: $vm.firstName)
                     .padding(20)
                     .font(.body)
                     .background(.ultraThinMaterial)
@@ -46,14 +34,21 @@ struct LoginView: View {
                     .onDisappear {
                         self.autoFocus = false
                     }
+                TextField("", text: $vm.lastName)
+                    .padding(20)
+                    .font(.body)
+                    .background(.ultraThinMaterial)
+                    .cornerRadius(15)
+                    .focused($autoFocus)
+                    .padding(.top, 10)
                 Spacer()
                 Button(action: {
-                    vm.login()
+                    vm.setName()
                 }) {
                     if vm.isLoading {
                         ProgressView()
                     } else {
-                        Text("Login")
+                        Text("Set Name")
                     }
                 }
                 .disabled(vm.isLoading)
@@ -68,11 +63,8 @@ struct LoginView: View {
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
+struct SetupName_Previews: PreviewProvider {
     static var previews: some View {
-        let vm = LoginViewModel()
-        let an = AuthenticationNavigationViewModel()
-        
-        LoginView(vm: vm, authNavigation: an)
+        SetupName(vm: SetupNameViewModel())
     }
 }

@@ -6,44 +6,89 @@
 //
 
 import Foundation
-import GoTrue
+import Combine
 
-public class AuthService {
-    private let supabaseClient = SupabaseClientManager.shared.supabaseClient
+// MARK: Actions
+public struct LoginAction {
+    struct Request: Encodable {
+        let phoneNumber: String
+    }
+    
+    struct Response: Codable {
+        let phoneNumber: String
+    }
+}
 
-    init() {}
+public struct VerifyAction {
+    struct Request: Encodable {
+        let phoneNumber: String
+        let code: String
+    }
+}
+
+enum AuthServiceEndpoints {
+    case loginWithPhoneNumber(request: LoginAction.Request)
+    case verifyOTPCode(request: VerifyAction.Request)
     
-    func login(withPhoneNumber: String) async throws -> Void {
-        do {
-            try await supabaseClient.auth.signInWithOTP(phone: withPhoneNumber)
-        } catch {
-            print("failure to login: \(error)")
+    var httpMethod: HTTPMethod {
+        switch self {
+        case .loginWithPhoneNumber:
+            return .POST
+        case .verifyOTPCode:
+            return .POST
         }
     }
     
-    func verify(withPhoneNumber: String, withCode: String) async throws -> Void {
-        do {
-            try await supabaseClient.auth.verifyOTP(phone: withPhoneNumber, token: withCode, type: .sms)
-        } catch {
-            print("failure to verify code: \(error)")
+    func createRequest() -> NetworkRequest {
+        var headers: [String: String] = [:]
+        headers["Content-Type"] = "application/json"
+//        headers["Authorization"] = "Bearer \(token)"
+        return NetworkRequest(url: getURL(), headers: headers, reqBody: requestBody, httpMethod: httpMethod)
+    }
+    
+    var requestBody: Encodable? {
+        switch self {
+        case .loginWithPhoneNumber(let request):
+            return request
+        case .verifyOTPCode(let request):
+            return request
         }
     }
     
-    func getSession() async throws -> Session {
-        do {
-            let session = try await supabaseClient.auth.session
-            return session
-        } catch {
-            print("failure to get session: \(error)")
-            throw error
+    func getURL() -> String {
+        switch self {
+        case .loginWithPhoneNumber:
+            return "http://192.168.1.139:8080/api/auth/login"
+        case .verifyOTPCode:
+            return "http://192.168.1.139:8080/api/auth/verify"
         }
     }
+}
+
+
+protocol AuthServiceable {
+    func loginWithPhoneNumber(_ phoneNumberRequest: LoginAction.Request) -> AnyPublisher<LoginAction.Response, NetworkError>
+    func verifyOTPCode(_ verifyRequest: VerifyAction.Request) -> AnyPublisher<UserModel, NetworkError>
+}
+
+public class AuthService: AuthServiceable {
+    private var networkService: NetworkService
     
-    func logout() async throws -> Void {
-        do {
-            try await supabaseClient.auth.signOut()
-        } catch {
-            throw error
-        }
+    init(networkService: NetworkService = NetworkService()) {
+        self.networkService = networkService
+    }
+    
+    func loginWithPhoneNumber(_ phoneNumberRequest: LoginAction.Request) -> AnyPublisher<LoginAction.Response, NetworkError> {
+        let endpoint = AuthServiceEndpoints.loginWithPhoneNumber(request: phoneNumberRequest)
+        let request = endpoint.createRequest()
+        
+        return self.networkService.request(request)
+    }
+    
+    func verifyOTPCode(_ verifyRequest: VerifyAction.Request) -> AnyPublisher<UserModel, NetworkError> {
+        let endpoint = AuthServiceEndpoints.verifyOTPCode(request: verifyRequest)
+        let request = endpoint.createRequest()
+        
+        return self.networkService.request(request)
     }
 }

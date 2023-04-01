@@ -9,15 +9,15 @@ import SwiftUI
 
 struct AppView: View {
     var body: some View {
-        RootNavigation()
+        RootNavigation(sessionManager: SessionManager.shared)
     }
 }
 
 struct RootNavigation: View {
-    @EnvironmentObject var sessionManager: SessionManager
+    @StateObject var sessionManager: SessionManager
     
     var body: some View {
-        if sessionManager.session.isAuthenticated {
+        if sessionManager.session.isAuthenticated  {
             MainNavigation()
         } else {
             AuthenticationNavigationView()
@@ -27,8 +27,7 @@ struct RootNavigation: View {
 
 struct AppView_Previews: PreviewProvider {
     static var previews: some View {
-        let sessionManager = SessionManager()
         AppView()
-            .environmentObject(sessionManager)
+            .preferredColorScheme(.dark)
     }
 }
